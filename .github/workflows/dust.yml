@@ -29,5 +29,5 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         directory: dust
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.PAT }}
         branch: dust
