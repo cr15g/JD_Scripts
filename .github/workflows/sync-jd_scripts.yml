@@ -31,3 +31,4 @@ jobs:
         directory: master
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: master
+        repository: "gossh520/sync"
