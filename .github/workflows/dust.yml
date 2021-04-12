@@ -31,4 +31,3 @@ jobs:
         directory: dust
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: dust
-        repository: "gossh520/sync"
