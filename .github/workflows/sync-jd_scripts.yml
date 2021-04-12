@@ -30,4 +30,4 @@ jobs:
       with:
         directory: master
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: master
+        branch: jd_scripts
