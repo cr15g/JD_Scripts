@@ -3,7 +3,7 @@ name: sync-jd_shell
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 */2 * * *'
+    - cron: '1 */5 * * *'
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
     - name: Prepare
       run: |
         mkdir -p ~/.ssh
-        echo -e "${{ secrets.SSH_JD }}" > ~/.ssh/id_rsa
+        echo -e "${{ secrets.JD_SHELL }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan gitee.com > ~/.ssh/known_hosts
     - name: Clone Master
